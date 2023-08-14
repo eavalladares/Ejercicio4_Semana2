@@ -1,0 +1,33 @@
+﻿using System;
+
+namespace ejerciciosSemana2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Desarrollar un programa que indique cual de tres numeros igresados
+            //por el usuario es el mayor y cual es el menor
+
+            Console.WriteLine("Veamos que numero es el mayor");
+
+            Console.WriteLine("Digita un numero: ");
+            double n1 = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digita un segundo numero: ");
+            double n2 = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Y digita un tercer numero: ");
+            double n3 = double.Parse(Console.ReadLine());
+
+            double NMayor = Math.Max(Math.Max(n1, n2), n3);
+            double NMenor = Math.Min(Math.Min(n1, n2), n3);
+
+            Console.WriteLine($"El numero mayor es: {NMayor} y el menor es: {NMenor}");
+
+            //no cerrar consola
+            Console.ReadLine();
+
+        }
+    }
+}
